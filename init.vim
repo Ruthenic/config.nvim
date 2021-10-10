@@ -16,6 +16,7 @@ Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'akinsho/bufferline.nvim'
 Plug 'numtostr/FTerm.nvim'
 Plug 'andweeb/presence.nvim'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 set termguicolors
 set mouse=a
