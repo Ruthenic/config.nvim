@@ -18,6 +18,7 @@ call plug#end()
 set termguicolors
 set mouse=a
 set clipboard=unnamedplus
+set pumheight=5
 colorscheme onedark
 lua require("plugins")
 lua require("keybinds")
