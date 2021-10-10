@@ -15,6 +15,7 @@ Plug 'L3MON4D3/LuaSnip'
 Plug 'saadparwaiz1/cmp_luasnip'
 Plug 'akinsho/bufferline.nvim'
 Plug 'numtostr/FTerm.nvim'
+Plug 'andweeb/presence.nvim'
 call plug#end()
 set termguicolors
 set mouse=a
