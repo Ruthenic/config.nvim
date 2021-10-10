@@ -6,3 +6,5 @@ map('v', '<C-x>', 'd', {noremap=true, silent=true})
 map('v', '<C-v>', 'p', {noremap=true, silent=true})
 map('i', '<C-z>', '<Esc>ui', {noremap=true, silent=true})
 map('i', '<C-y>', '<Esc>:red<Enter>i', {noremap=true, silent=true})
+map('i', '<C-s>', '<Esc>:w<Enter>i', {noremap=true})
+

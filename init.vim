@@ -19,6 +19,7 @@ set termguicolors
 set mouse=a
 set clipboard=unnamedplus
 set pumheight=5
+set number
 colorscheme onedark
 lua require("plugins")
 lua require("keybinds")
