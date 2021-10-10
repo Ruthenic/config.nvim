@@ -10,7 +10,6 @@ require'lspconfig'.denols.setup{
 	capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 }
 
-require('bufferline').setup()
 local cmp = require('cmp')
 
 cmp.setup({
@@ -57,3 +56,5 @@ require('lualine').setup {
   tabline = {},
   extensions = {}
 }
+
+require("bufferline").setup({})

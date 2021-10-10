@@ -7,4 +7,7 @@ map('v', '<C-v>', 'p', {noremap=true, silent=true})
 map('i', '<C-z>', '<Esc>ui', {noremap=true, silent=true})
 map('i', '<C-y>', '<Esc>:red<Enter>i', {noremap=true, silent=true})
 map('i', '<C-s>', '<Esc>:w<Enter>i', {noremap=true})
-
+map('n', '<C-,>', ':BufferLineCyclePrev<CR>', {noremap=false})
+map('n', '<C-.>', ':BufferLineCycleNext<CR>', {noremap=false})
+map('n', '<C-[>', ':BufferLineMovePrev<CR>', {noremap=true})
+map('n', '<C-]>', ':BufferLineMoveNext<CR>', {noremap=true})
