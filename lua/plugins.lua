@@ -1,3 +1,6 @@
+local gps = require("nvim-gps")
+gps.setup()
+
 require("indent_blankline").setup {
     char = "|",
     buftype_exclude = {"terminal"}
@@ -40,7 +43,7 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {'filename'},
+    lualine_c = {'filename', { gps.get_location, condition = gps.is_available }},
     lualine_x = {'encoding', 'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
@@ -58,4 +61,3 @@ require('lualine').setup {
 }
 
 require("bufferline").setup({})
-

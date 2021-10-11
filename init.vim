@@ -17,6 +17,7 @@ Plug 'akinsho/bufferline.nvim'
 Plug 'numtostr/FTerm.nvim'
 Plug 'andweeb/presence.nvim'
 Plug 'tpope/vim-fugitive'
+Plug 'SmiteshP/nvim-gps'
 call plug#end()
 set termguicolors
 set mouse=a
