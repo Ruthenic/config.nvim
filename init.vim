@@ -1,3 +1,5 @@
+" TODO: start using an init.lua (main blocker is I cbf to switch package
+" managers (maybe I can make a wrapper?)
 call plug#begin('~/.vim/plugged')
 Plug 'neovim/nvim-lspconfig'
 Plug 'kyazdani42/nvim-web-devicons'
