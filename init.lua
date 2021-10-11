@@ -1,3 +1,4 @@
+-- TODO: switch to a more lua friendly plugin manager
 local set = vim.opt
 local Plug = vim.fn['plug#']
 vim.call("plug#begin", "~/.vim/plugged")
