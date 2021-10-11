@@ -26,6 +26,8 @@ set.mouse = 'a'
 set.clipboard = 'unnamedplus'
 set.pumheight =5
 set.number = true
+set.tabstop = 4
+set.shiftwidth = 4
 vim.cmd('colorscheme onedark') -- I would assume there would be a more lua-y way to do this... right?
 require("plugins")
 require("keybinds")
