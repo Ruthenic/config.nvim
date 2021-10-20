@@ -11,11 +11,8 @@ Plug 'kyazdani42/nvim-tree.lua'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'joshdick/onedark.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
-Plug 'hrsh7th/cmp-nvim-lsp'
-Plug 'hrsh7th/cmp-buffer'
-Plug 'hrsh7th/nvim-cmp'
-Plug 'L3MON4D3/LuaSnip'
-Plug 'saadparwaiz1/cmp_luasnip'
+Plug('ms-jpq/coq_nvim', {branch = 'coq'})
+Plug('ms-jpq/coq.artifacts', {branch = 'artifacts'})
 Plug 'akinsho/bufferline.nvim'
 Plug 'numtostr/FTerm.nvim'
 Plug 'andweeb/presence.nvim'
