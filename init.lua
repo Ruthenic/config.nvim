@@ -13,7 +13,7 @@ Plug 'joshdick/onedark.vim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug('ms-jpq/coq_nvim', {branch = 'coq'})
 Plug('ms-jpq/coq.artifacts', {branch = 'artifacts'})
-Plug 'akinsho/bufferline.nvim'
+Plug 'noib3/cokeline.nvim'
 Plug 'numtostr/FTerm.nvim'
 Plug 'andweeb/presence.nvim'
 Plug 'tpope/vim-fugitive'

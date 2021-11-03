@@ -1,3 +1,4 @@
+local get_hex = require('cokeline/utils').get_hex
 local gps = require("nvim-gps")
 local coq = require "coq"
 gps.setup()
@@ -28,7 +29,7 @@ require('lualine').setup {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
     lualine_c = {'filename', { gps.get_location, condition = gps.is_available }},
-    lualine_x = {'encoding', 'fileformat', 'filetype'},
+    lualine_x = {'fileformat', 'filetype'},
     lualine_y = {'progress'},
     lualine_z = {'location'}
   },
@@ -44,4 +45,48 @@ require('lualine').setup {
   extensions = {}
 }
 
-require("bufferline").setup({})
+-- Credit to the original author of cokeline for creating most of this config
+require('cokeline').setup({
+  default_hl = {
+    focused = {
+      fg = get_hex('Normal', 'fg'),
+      bg = get_hex('ColorColumn', 'bg'),
+    },
+    unfocused = {
+      fg = get_hex('Comment', 'fg'),
+      bg = get_hex('ColorColumn', 'bg'),
+    },
+  },
+
+  components = {
+    {
+      text = function(buffer) 
+		  if buffer.is_focused then
+			return '│ ' .. buffer.devicon.icon
+		  else
+			return '| ' .. buffer.devicon.icon
+		  end
+	  end,
+      hl = {
+        fg = function(buffer) return buffer.devicon.color end,
+      },
+    },
+    {
+      text = function(buffer) return buffer.unique_prefix end,
+      hl = {
+        fg = get_hex('Comment', 'fg'),
+        style = 'italic',
+      },
+    },
+    {
+      text = function(buffer) return buffer.filename .. ' ' end,
+    },
+    {
+      text = 'X',
+      delete_buffer_on_left_click = true,
+    },
+    {
+      text = ' ',
+    }
+  },
+})
