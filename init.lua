@@ -18,6 +18,7 @@ Plug 'numtostr/FTerm.nvim'
 Plug 'andweeb/presence.nvim'
 Plug 'tpope/vim-fugitive'
 Plug 'SmiteshP/nvim-gps'
+Plug 'github/copilot.vim'
 vim.call('plug#end')
 set.termguicolors = true
 set.mouse = 'a'
