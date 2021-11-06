@@ -73,12 +73,14 @@ require('cokeline').setup({
 	  end,
       hl = {
         fg = function(buffer) return buffer.devicon.color end,
+		bg = get_hex('ColorColumn', 'bg')
       },
     },
     {
       text = function(buffer) return buffer.unique_prefix end,
       hl = {
         fg = get_hex('Comment', 'fg'),
+		bg = get_hex('ColorColumn', 'bg'),
         style = 'italic',
       },
     },
