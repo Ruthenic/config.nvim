@@ -1,24 +1,24 @@
 -- TODO: switch to a more lua friendly plugin manager
 local set = vim.opt
-local Plug = vim.fn['plug#']
-vim.call("plug#begin", "~/.vim/plugged")
-Plug 'neovim/nvim-lspconfig'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'kyazdani42/nvim-tree.lua'
-Plug 'lukas-reineke/indent-blankline.nvim'
-Plug 'joshdick/onedark.vim'
-Plug 'nvim-treesitter/nvim-treesitter'
-Plug('ms-jpq/coq_nvim', {branch = 'coq'})
-Plug('ms-jpq/coq.artifacts', {branch = 'artifacts'})
-Plug 'noib3/cokeline.nvim'
-Plug 'numtostr/FTerm.nvim'
-Plug 'andweeb/presence.nvim'
-Plug 'tpope/vim-fugitive'
-Plug 'SmiteshP/nvim-gps'
-vim.call('plug#end')
+require('packer').startup(function()
+	use 'wbthomason/packer.nvim'
+	use 'neovim/nvim-lspconfig'
+	use 'kyazdani42/nvim-web-devicons'
+	use 'nvim-lualine/lualine.nvim'
+	use 'nvim-lua/plenary.nvim'
+	use 'nvim-telescope/telescope.nvim'
+	use 'kyazdani42/nvim-tree.lua'
+	use 'lukas-reineke/indent-blankline.nvim'
+	use 'joshdick/onedark.vim'
+	use 'nvim-treesitter/nvim-treesitter'
+	-- use {'ms-jpq/coq_nvim', branch = 'coq'}
+	-- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+	use {'noib3/cokeline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+	use 'numtostr/FTerm.nvim'
+	use 'andweeb/presence.nvim'
+	use 'tpope/vim-fugitive'
+	use 'SmiteshP/nvim-gps'
+end)
 set.termguicolors = true
 set.mouse = 'a'
 set.clipboard = 'unnamedplus'
