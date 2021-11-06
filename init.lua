@@ -22,7 +22,7 @@ vim.call('plug#end')
 set.termguicolors = true
 set.mouse = 'a'
 set.clipboard = 'unnamedplus'
-set.pumheight =5
+set.pumheight = 5
 set.number = true
 set.tabstop = 4
 set.shiftwidth = 4
