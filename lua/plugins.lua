@@ -14,6 +14,10 @@ require'lspconfig'.clangd.setup{
 require'lspconfig'.denols.setup{
 	coq.lsp_ensure_capabilities()
 }
+require'lspconfig'.vls.setup{
+	cmd = {'/usr/local/bin/vls'},
+	coq.lsp_ensure_capabilities()
+}
 
 vim.cmd('COQnow -s')
 
