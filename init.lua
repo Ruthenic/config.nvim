@@ -11,8 +11,8 @@ require('packer').startup(function()
 	use 'lukas-reineke/indent-blankline.nvim'
 	use 'joshdick/onedark.vim'
 	use 'nvim-treesitter/nvim-treesitter'
-	-- use {'ms-jpq/coq_nvim', branch = 'coq'}
-	-- use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+	use {'ms-jpq/coq_nvim', branch = 'coq'}
+	use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
 	use {'noib3/cokeline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use 'numtostr/FTerm.nvim'
 	use 'andweeb/presence.nvim'
