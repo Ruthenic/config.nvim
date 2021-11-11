@@ -1,4 +1,4 @@
--- TODO: switch to a more lua friendly plugin manager
+--TODO: switch to a more lua friendly plugin manager
 local set = vim.opt
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
@@ -18,6 +18,8 @@ require('packer').startup(function()
 	use 'andweeb/presence.nvim'
 	use 'tpope/vim-fugitive'
 	use 'SmiteshP/nvim-gps'
+	use 'folke/todo-comments.nvim'
+	use 'dstein64/vim-startuptime'
 end)
 set.termguicolors = true
 set.mouse = 'a'
