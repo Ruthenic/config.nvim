@@ -1,7 +1,9 @@
+vim.g.did_load_filetypes = 1
 --TODO: switch to a more lua friendly plugin manager
 local set = vim.opt
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
+	use "nathom/filetype.nvim"
 	use 'neovim/nvim-lspconfig'
 	use 'kyazdani42/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'
@@ -9,7 +11,7 @@ require('packer').startup(function()
 	use 'nvim-telescope/telescope.nvim'
 	use 'kyazdani42/nvim-tree.lua'
 	use 'lukas-reineke/indent-blankline.nvim'
-	use 'joshdick/onedark.vim'
+	use 'navarasu/onedark.nvim'
 	use 'nvim-treesitter/nvim-treesitter'
 	use {'ms-jpq/coq_nvim', branch = 'coq'}
 	use {'ms-jpq/coq.artifacts', branch = 'artifacts'}

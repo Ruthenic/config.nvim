@@ -79,6 +79,16 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/cokeline.nvim",
     url = "https://github.com/noib3/cokeline.nvim"
   },
+  ["coq.artifacts"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq.artifacts",
+    url = "https://github.com/ms-jpq/coq.artifacts"
+  },
+  coq_nvim = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq_nvim",
+    url = "https://github.com/ms-jpq/coq_nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
@@ -114,10 +124,10 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.vim"] = {
+  ["onedark.nvim"] = {
     loaded = true,
-    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/onedark.vim",
-    url = "https://github.com/joshdick/onedark.vim"
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -139,10 +149,20 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["todo-comments.nvim"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/todo-comments.nvim",
+    url = "https://github.com/folke/todo-comments.nvim"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-startuptime"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/vim-startuptime",
+    url = "https://github.com/dstein64/vim-startuptime"
   }
 }
 
