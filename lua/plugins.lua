@@ -54,11 +54,11 @@ require('cokeline').setup({
   default_hl = {
     focused = {
       fg = get_hex('Normal', 'fg'),
-      bg = get_hex('ColorColumn', 'bg'),
+      bg = get_hex('Background', 'bg'),
     },
     unfocused = {
       fg = get_hex('Comment', 'fg'),
-      bg = get_hex('ColorColumn', 'bg'),
+      bg = get_hex('Background', 'bg'),
     },
   },
 
@@ -78,7 +78,6 @@ require('cokeline').setup({
     {
       text = function(buffer) return buffer.unique_prefix end,
       hl = {
-        fg = get_hex('Comment', 'fg'),
         style = 'italic',
       },
     },
@@ -91,6 +90,6 @@ require('cokeline').setup({
     },
     {
       text = ' ',
-    }
+    },
   },
 })
