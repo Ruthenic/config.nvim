@@ -89,6 +89,11 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq_nvim",
     url = "https://github.com/ms-jpq/coq_nvim"
   },
+  ["filetype.nvim"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/filetype.nvim",
+    url = "https://github.com/nathom/filetype.nvim"
+  },
   ["indent-blankline.nvim"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
