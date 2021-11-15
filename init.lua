@@ -32,5 +32,6 @@ set.number = true
 set.tabstop = 4
 set.shiftwidth = 4
 require("colorscheme")
+require("config")
 require("plugins")
 require("keybinds")
