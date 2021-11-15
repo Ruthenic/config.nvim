@@ -92,7 +92,7 @@ _G.packer_plugins = {
   ["filetype.nvim"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/filetype.nvim",
-    url = "https://github.com/nathom/filetype.nvim"
+    url = "https://github.com/Ruthenic/filetype.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
@@ -103,6 +103,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["nvim-cursorline"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
+    url = "https://github.com/yamatsum/nvim-cursorline"
   },
   ["nvim-gps"] = {
     loaded = true,
@@ -129,11 +134,6 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
-  ["onedark.nvim"] = {
-    loaded = true,
-    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/onedark.nvim",
-    url = "https://github.com/navarasu/onedark.nvim"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -148,6 +148,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/presence.nvim",
     url = "https://github.com/andweeb/presence.nvim"
+  },
+  sonokai = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/sonokai",
+    url = "https://github.com/sainnhe/sonokai"
   },
   ["telescope.nvim"] = {
     loaded = true,

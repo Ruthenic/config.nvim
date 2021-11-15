@@ -49,7 +49,7 @@ vim.cmd('COQnow -s')
 require('lualine').setup {
   options = {
     icons_enabled = true,
-    theme = 'onedark',
+    theme = 'sonokai',
     component_separators = {'', ''},
     section_separators = {'', ''},
     disabled_filetypes = {}

@@ -11,7 +11,8 @@ require('packer').startup(function()
 	use 'nvim-telescope/telescope.nvim'
 	use 'kyazdani42/nvim-tree.lua'
 	use 'lukas-reineke/indent-blankline.nvim'
-	use 'navarasu/onedark.nvim'
+	use 'sainnhe/sonokai'
+	use 'yamatsum/nvim-cursorline'
 	use 'nvim-treesitter/nvim-treesitter'
 	use {'ms-jpq/coq_nvim', branch = 'coq'}
 	use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
@@ -30,6 +31,6 @@ set.pumheight = 5
 set.number = true
 set.tabstop = 4
 set.shiftwidth = 4
-vim.cmd('colorscheme onedark') -- I would assume there would be a more lua-y way to do this... right?
+require("colorscheme")
 require("plugins")
 require("keybinds")
