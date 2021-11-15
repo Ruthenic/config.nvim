@@ -3,7 +3,7 @@ vim.g.did_load_filetypes = 1
 local set = vim.opt
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
-	use "nathom/filetype.nvim"
+	use "Ruthenic/filetype.nvim"
 	use 'neovim/nvim-lspconfig'
 	use 'kyazdani42/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'
