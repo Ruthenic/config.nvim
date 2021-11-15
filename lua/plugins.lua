@@ -19,6 +19,31 @@ require'lspconfig'.vls.setup{
 	coq.lsp_ensure_capabilities()
 }
 
+local runtime_path = vim.split(package.path, ';')
+table.insert(runtime_path, "lua/?.lua")
+table.insert(runtime_path, "lua/?/init.lua")
+local sumneko_root_path = '/home/ruthenic/lua-language-server/bin/Linux/'
+require'lspconfig'.sumneko_lua.setup {
+	cmd = {sumneko_root_path .. "lua-language-server", "-E", sumneko_root_path .. "main.lua"},
+	coq.lsp_ensure_capabilities({settings = {
+		Lua = {
+			runtime = {
+				version = 'LuaJIT',
+				path = runtime_path,
+			},
+			diagnostics = {
+				globals = {'vim'},
+			},
+			workspace = {
+				library = vim.api.nvim_get_runtime_file("", true),
+			},
+			telemetry = {
+				enable = false,
+			},
+		},
+	}})
+}
+
 vim.cmd('COQnow -s')
 
 require('lualine').setup {
@@ -64,7 +89,7 @@ require('cokeline').setup({
 
   components = {
     {
-      text = function(buffer) 
+      text = function(buffer)
 		  if buffer.is_focused then
 			return '│ ' .. buffer.devicon.icon
 		  else
