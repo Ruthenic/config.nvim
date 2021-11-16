@@ -27,14 +27,14 @@ table.insert(runtime_path, "lua/?/init.lua")
 local sumneko_root_path = '/home/ruthenic/lua-language-server/bin/Linux/'
 require'lspconfig'.sumneko_lua.setup {
 	cmd = {sumneko_root_path .. "lua-language-server", "-E", sumneko_root_path .. "main.lua"},
-	coq.lsp_ensure_capabilities({settings = {
+	settings = {
 		Lua = {
 			runtime = {
 				version = 'LuaJIT',
 				path = runtime_path,
 			},
 			diagnostics = {
-				globals = {'vim'},
+				globals = {'vim', 'use'},
 			},
 			workspace = {
 				library = vim.api.nvim_get_runtime_file("", true),
@@ -43,7 +43,8 @@ require'lspconfig'.sumneko_lua.setup {
 				enable = false,
 			},
 		},
-	}})
+	},
+	coq.lsp_ensure_capabilities(),
 }
 
 vim.cmd('COQnow -s')
