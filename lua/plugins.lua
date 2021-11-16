@@ -50,17 +50,17 @@ require('lualine').setup {
   options = {
     icons_enabled = true,
     theme = 'sonokai',
-    component_separators = {'', ''},
-    section_separators = {'', ''},
+    component_separators = {left = '', right = ''},
+    section_separators = {left = '', right = ''},
     disabled_filetypes = {}
   },
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
     lualine_c = {'filename', { gps.get_location, condition = gps.is_available }},
-    lualine_x = {'fileformat', 'filetype'},
-    lualine_y = {'progress'},
-    lualine_z = {'location'}
+    lualine_x = {'fileformat'},
+    lualine_y = {'diff'},
+    lualine_z = {'filetype'}
   },
   inactive_sections = {
     lualine_a = {},
