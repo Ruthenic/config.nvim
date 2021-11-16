@@ -84,6 +84,11 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq.artifacts",
     url = "https://github.com/ms-jpq/coq.artifacts"
   },
+  ["coq.thirdparty"] = {
+    loaded = true,
+    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq.thirdparty",
+    url = "https://github.com/ms-jpq/coq.thirdparty"
+  },
   coq_nvim = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/coq_nvim",

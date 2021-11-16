@@ -6,6 +6,10 @@ require("indent_blankline").setup {
     buftype_exclude = {"terminal"}
 }
 
+require("coq_3p") {
+	{src = "nvimlua", short_name = "nLUA"}
+}
+
 require'lspconfig'.clangd.setup{
 	coq.lsp_ensure_capabilities()
 }

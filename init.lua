@@ -1,6 +1,5 @@
 vim.g.did_load_filetypes = 1
 --TODO: switch to a more lua friendly plugin manager
-local set = vim.opt
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
 	use "Ruthenic/filetype.nvim"
@@ -16,6 +15,7 @@ require('packer').startup(function()
 	use 'nvim-treesitter/nvim-treesitter'
 	use {'ms-jpq/coq_nvim', branch = 'coq'}
 	use {'ms-jpq/coq.artifacts', branch = 'artifacts'}
+	use {'ms-jpq/coq.thirdparty', branch = '3p'}
 	use {'noib3/cokeline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 	use 'numtostr/FTerm.nvim'
 	use 'andweeb/presence.nvim'
