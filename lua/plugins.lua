@@ -1,7 +1,5 @@
 local get_hex = require('cokeline/utils').get_hex
-local gps = require("nvim-gps")
 local coq = require "coq"
-gps.setup()
 
 require("indent_blankline").setup {
     char = "|",
@@ -57,7 +55,7 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {'filename', { gps.get_location, condition = gps.is_available }},
+    lualine_c = {'filename'},
     lualine_x = {'fileformat'},
     lualine_y = {'diff'},
     lualine_z = {'filetype'}

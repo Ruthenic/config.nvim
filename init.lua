@@ -20,7 +20,6 @@ require('packer').startup(function()
 	use 'numtostr/FTerm.nvim'
 	use 'andweeb/presence.nvim'
 	use 'tpope/vim-fugitive'
-	use 'SmiteshP/nvim-gps'
 	use 'folke/todo-comments.nvim'
 	use 'dstein64/vim-startuptime'
 end)
