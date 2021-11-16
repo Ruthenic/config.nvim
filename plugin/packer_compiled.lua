@@ -109,11 +109,6 @@ _G.packer_plugins = {
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-cursorline",
     url = "https://github.com/yamatsum/nvim-cursorline"
   },
-  ["nvim-gps"] = {
-    loaded = true,
-    path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-gps",
-    url = "https://github.com/SmiteshP/nvim-gps"
-  },
   ["nvim-lspconfig"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",

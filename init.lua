@@ -23,13 +23,6 @@ require('packer').startup(function()
 	use 'folke/todo-comments.nvim'
 	use 'dstein64/vim-startuptime'
 end)
-set.termguicolors = true
-set.mouse = 'a'
-set.clipboard = 'unnamedplus'
-set.pumheight = 5
-set.number = true
-set.tabstop = 4
-set.shiftwidth = 4
 require("colorscheme")
 require("config")
 require("plugins")
