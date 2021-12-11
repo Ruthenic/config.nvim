@@ -11,4 +11,4 @@ set.tabstop = 4               -- Set up tabs
 set.shiftwidth = 4               -- See above
 
 -- Autocmds
-vim.cmd("autocmd InsertLeave * write") -- Autowrite when leaving insert mode
+
