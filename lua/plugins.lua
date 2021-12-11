@@ -3,7 +3,7 @@ local coq = require "coq"
 
 require("indent_blankline").setup {
     char = "|",
-    buftype_exclude = {"terminal"}
+    buftype_exclude = {"terminal", "help"}
 }
 
 require("coq_3p") {
