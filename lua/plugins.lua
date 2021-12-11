@@ -49,6 +49,17 @@ require'lspconfig'.sumneko_lua.setup {
 
 vim.cmd('COQnow -s')
 
+local function filenameIfFileOpened()
+	local filename = vim.fn.expand('%:t')
+	if filename == '' then
+		return ""
+	elseif vim.bo.modified then
+		return filename .. "*"
+	else
+		return filename
+	end
+end
+
 require('lualine').setup {
   options = {
     icons_enabled = true,
@@ -60,7 +71,7 @@ require('lualine').setup {
   sections = {
     lualine_a = {'mode'},
     lualine_b = {'branch'},
-    lualine_c = {'filename'},
+    lualine_c = {filenameIfFileOpened},
     lualine_x = {'fileformat'},
     lualine_y = {'diff'},
     lualine_z = {'filetype'}
@@ -68,7 +79,7 @@ require('lualine').setup {
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = {'filename'},
+    lualine_c = {filenameIfFileOpened},
     lualine_x = {'location'},
     lualine_y = {},
     lualine_z = {}
