@@ -52,9 +52,11 @@ vim.cmd('COQnow -s')
 local function filenameIfFileOpened()
 	local filename = vim.fn.expand('%:t')
 	if filename == '' then
-		return ""
+		return ''
+	elseif filename == 'COMMIT_EDITMSG' then
+		return '[Git commit]'
 	elseif vim.bo.modified then
-		return filename .. "*"
+		return filename .. '*'
 	else
 		return filename
 	end
