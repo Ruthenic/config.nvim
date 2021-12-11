@@ -2,7 +2,7 @@ vim.g.did_load_filetypes = 1
 --TODO: switch to a more lua friendly plugin manager
 require('packer').startup(function()
 	use 'wbthomason/packer.nvim'
-	use "Ruthenic/filetype.nvim"
+	use "nathom/filetype.nvim"
 	use 'neovim/nvim-lspconfig'
 	use 'kyazdani42/nvim-web-devicons'
 	use 'nvim-lualine/lualine.nvim'

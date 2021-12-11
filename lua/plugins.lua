@@ -1,6 +1,12 @@
 local get_hex = require('cokeline/utils').get_hex
 local coq = require "coq"
 
+require("filetype").setup {
+	overrides = {
+		extensions = {v = "vlang"}
+	}
+}
+
 require("indent_blankline").setup {
     char = "|",
     buftype_exclude = {"terminal", "help"}

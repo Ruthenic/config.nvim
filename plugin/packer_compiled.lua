@@ -97,7 +97,7 @@ _G.packer_plugins = {
   ["filetype.nvim"] = {
     loaded = true,
     path = "/home/ruthenic/.local/share/nvim/site/pack/packer/start/filetype.nvim",
-    url = "https://github.com/Ruthenic/filetype.nvim"
+    url = "https://github.com/nathom/filetype.nvim"
   },
   ["indent-blankline.nvim"] = {
     loaded = true,
