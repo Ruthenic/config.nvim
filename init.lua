@@ -22,6 +22,7 @@ require("paq")({
 	'tpope/vim-fugitive';
 	'folke/todo-comments.nvim';
 	'dstein64/vim-startuptime';
+	{'nvim-telescope/telescope-fzf-native.nvim', run='make'};
 })
 require("colorscheme")
 require("config")
