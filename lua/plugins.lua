@@ -20,6 +20,7 @@ require'lspconfig'.clangd.setup{
 	coq.lsp_ensure_capabilities()
 }
 require'lspconfig'.denols.setup{
+	cmd = {'deno', 'lsp'},
 	coq.lsp_ensure_capabilities()
 }
 require'lspconfig'.vls.setup{
