@@ -1,5 +1,6 @@
 local get_hex = require('cokeline/utils').get_hex
 local coq = require "coq"
+-- local highlight = require "todo-comments.highlight"
 
 require("filetype").setup {
 	overrides = {
@@ -52,6 +53,13 @@ require'lspconfig'.sumneko_lua.setup {
 		},
 	},
 	coq.lsp_ensure_capabilities(),
+}
+
+require('nvim-treesitter.configs').setup {
+	highlight = {
+		enable = true,
+		disable = {"lua"}
+	}
 }
 
 vim.cmd('COQnow -s')

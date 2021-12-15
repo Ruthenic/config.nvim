@@ -9,6 +9,7 @@ set.pumheight = 5             -- Uhh whatever the fuck this does
 set.number = true             -- Show line numbers
 set.tabstop = 4               -- Set up tabs
 set.shiftwidth = 4               -- See above
+set.cursorline = false
 
 -- Autocmds
 
