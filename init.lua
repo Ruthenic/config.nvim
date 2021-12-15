@@ -23,6 +23,8 @@ require("paq")({
 	'folke/todo-comments.nvim';
 	'dstein64/vim-startuptime';
 	{'nvim-telescope/telescope-fzf-native.nvim', run='make'};
+	"luukvbaal/stabilize.nvim";
+	'folke/trouble.nvim';
 })
 require("colorscheme")
 require("config")

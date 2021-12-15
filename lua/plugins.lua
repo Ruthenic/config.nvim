@@ -143,3 +143,5 @@ require('cokeline').setup({
 })
 
 require('telescope').load_extension('fzf')
+require('stabilize').setup()
+require('trouble').setup()
